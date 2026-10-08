@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    background-color: #dff3ff;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    padding: 40px;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #174a6e;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+p {
+    color: #426b82;
+    font-size: 17px;
+    font-family: "Segoe Script", cursive;
+    margin-top: 0;
+}
+
+h2 {
+    color: #23658a;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-card {
+    width: 220px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #c7e5f5;
+    border-radius: 14px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(40, 100, 130, 0.12);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.movie-card h3 {
+    margin: 12px 0 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #234052;
+    font-weight: bold;
+}
+
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-items: center;
+}
+
+.rating {
+    color: #f5c542;
+    font-size: 18px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+
+@media (max-width: 900px) {
+    .movie-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .movie-container {
+        grid-template-columns: 1fr;
+    }
+}
